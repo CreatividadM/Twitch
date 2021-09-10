@@ -1,0 +1,7 @@
+{
+  "name": "twitch",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
