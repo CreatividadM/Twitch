@@ -9,4 +9,23 @@ export class HomePage {
 
   constructor() {}
 
+  //Sliders
+  slideOpts = {
+    slidesPerView: 4,
+    mode:'md',
+  };
+
+  slideOptsGames = {
+    slidesPerView: 4,
+    mode:'md',
+  };
+
+  options = {
+    slidesPerView: 1.5,
+    centeredSlides:true,
+    mode:'md',
+    spaceBetween:5,
+    initialSlide: 1
+  }
+
 }

@@ -1,0 +1,6 @@
+{
+	"appId": "com.twitch.creatividadmovil",
+	"appName": "twitch",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

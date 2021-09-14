@@ -1,20 +1,205 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content fullscreen>
+  <div id="backgound-home"></div>
+  <!--
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    | HEADER
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  !-->
+  <div id="header">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-item lines="none" class="hijo">
+      <ion-avatar slot="start">
+        <img src="/assets/img/avatar.png">
+      </ion-avatar>
+      <ion-label>
+        <h2 class="title-header">M4st3rmiau</h2>
+        <small class="subtitle-header">ONLINE</small>
+      </ion-label>
+      <ion-icon name="chatbubble-ellipses-outline" slot="end"></ion-icon>
+      <span slot="end" class="box-ruby"><p class="ruby"></p> 200</span>
+    </ion-item>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
+
+  <!--
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    | SECTIONS FOUNDERS
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  !-->
+  <section id="descubrir">
+    <ul>
+      <li><h1>Descubrir <span>Siguiendo</span> </h1></li>
+    </ul>
+
+    <ion-card mode="md">
+      <ion-card-content>
+        <ion-slides mode="md" [options]="slideOpts">
+          <ion-slide>
+            <ion-tab-button routerLink="/">
+              <ion-icon class="icon-escudo"></ion-icon>
+              <ion-label>Acción</ion-label>
+            </ion-tab-button>
+          </ion-slide>
+          <ion-slide>
+            <ion-tab-button routerLink="/">
+              <ion-icon class="icon-pelota"></ion-icon>
+              <ion-label>Sports</ion-label>
+            </ion-tab-button>
+          </ion-slide>
+          <ion-slide>
+            <ion-tab-button routerLink="/">
+              <ion-icon class="icon-skull"></ion-icon>
+              <ion-label>RPG</ion-label>
+            </ion-tab-button>
+          </ion-slide>
+          <ion-slide>
+            <ion-tab-button routerLink="/">
+              <ion-icon class="icon-sound"></ion-icon>
+              <ion-label>Musica</ion-label>
+            </ion-tab-button>
+          </ion-slide>
+        </ion-slides>
+      </ion-card-content>
+    </ion-card>
+  </section>
+
+  <!--
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    | SECTIONS CHANNELS
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  !-->
+  <section id="canales">
+    <h2>Canales en vivo</h2>
+
+    <ion-slides mode="md" [options]="options">
+      <ion-slide>
+        <ion-card>
+          <ion-img src="/assets/img/imgyoutube.png"></ion-img>
+          <span class="live">En vivo</span><span class="views">13K Views</span>
+          <ion-card-header>
+            <ion-card-title>Auronplay <span>Esta transmitiendo</span> Amoung us </ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-chip>
+              <ion-label>Acción</ion-label>
+            </ion-chip>
+            <ion-chip>
+              <ion-label>Plataforma</ion-label>
+            </ion-chip>
+            <ion-chip>
+              <ion-label>Deportes</ion-label>
+            </ion-chip>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <ion-img src="/assets/img/imgyoutube.png"></ion-img>
+          <span class="live">En vivo</span><span class="views">13K Views</span>
+          <ion-card-header>
+            <ion-card-title>Auronplay <span>Esta transmitiendo</span> Amoung us </ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-chip>
+              <ion-label>Acción</ion-label>
+            </ion-chip>
+            <ion-chip>
+              <ion-label>Plataforma</ion-label>
+            </ion-chip>
+            <ion-chip>
+              <ion-label>Deportes</ion-label>
+            </ion-chip>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <ion-img src="/assets/img/imgyoutube.png"></ion-img>
+          <span class="live">En vivo</span><span class="views">13K Views</span>
+          <ion-card-header>
+            <ion-card-title>Auronplay <span>Esta transmitiendo</span> Amoung us </ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <ion-chip>
+              <ion-label>Acción</ion-label>
+            </ion-chip>
+            <ion-chip>
+              <ion-label>Plataforma</ion-label>
+            </ion-chip>
+            <ion-chip>
+              <ion-label>Deportes</ion-label>
+            </ion-chip>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  
+  </section>
+
+  <!--
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    | SECTIONS RECOMMEND GAMES
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  !-->
+  <section id="recommend">
+    <h2>Juegos Recomendados</h2>
+    <ion-slides [options]="slideOptsGames">
+      <ion-slide>
+        <ion-tab-button routerLink="/">
+          <ion-img src="/assets/img/gameminecraft.png"></ion-img>
+        </ion-tab-button>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="/assets/img/boxart_6832.png"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="/assets/img/callofduty.png"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="/assets/img/pc-ut-league-of-legends-hero.png"></ion-img>
+      </ion-slide>
+    </ion-slides>
+  </section>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button>
+      <ion-icon class="sonic"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
 </ion-content>
+
+<ion-footer class="ion-no-border">
+
+  <div class="transparentblur"></div>
+  <div class="triangulo"></div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-tab-button routerLink="/">
+          <ion-icon class="first" name="home"></ion-icon>
+        </ion-tab-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-tab-button routerLink="/">
+          <ion-icon name="heart"></ion-icon>
+        </ion-tab-button>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+      <ion-col size="2">
+        <ion-tab-button routerLink="/">
+          <ion-icon name="compass"></ion-icon>
+        </ion-tab-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-tab-button routerLink="/">
+          <ion-icon name="notifications"></ion-icon>
+        </ion-tab-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-footer>

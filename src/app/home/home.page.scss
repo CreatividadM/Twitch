@@ -1,27 +1,294 @@
-#container {
-  text-align: center;
+/*
+  Varials Colors Theme
+  MaoLop
+*/
+$primary:#6630DE;
+$pink:#E33FB1;
+$blueking:#100E40;
+$secondary:#29C69B;
+$gray:#626A93;
+$white:#FFFFFF;
 
+#backgound-home{
+  display: block;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+  padding: 0;
   margin: 0;
+  height: 50%;
+  width: 100%;
+  background: url('/assets/img/background-home.png') center center no-repeat;
+  background-size: cover;
+}
+ion-content{
+  --background:#100E40;
+  position: relative;
+  .trapecio{
+    background:rgb(16,14,64);
+  }
+  ion-fab{
+    ion-fab-button{
+      //--background:rgb(16,14,64);
+      --background: url('/assets/img/botontras.png') center center no-repeat;
+      --box-shadow:none;
+      width: 153px;
+      height: 141px;
+      --border-radius: 0px;
+      ion-icon.sonic{
+        position: relative;
+        top: -25px;
+        width: 21px;
+        height: 16px;
+        background: url('/assets/img/sonic.png') center no-repeat;
+      }
+    }
+  }
 }
 
-#container a {
-  text-decoration: none;
+#header{
+  background: rgb(16,14,64);
+  background: linear-gradient(180deg, rgba(16,14,64,1) 60%, rgba(98,106,147,1) 280%);
+  padding: 2em;
+  border-radius: 0 0 3em 3em;
+  ion-item{
+    --background: transparent;
+    ion-label{
+      .title-header{
+        color:$white;
+        font-family: 'Mulish';
+        font-weight: 900;
+      }
+      .subtitle-header{
+        color: $secondary;
+        font-family: 'Mulish';
+        font-weight: 900;
+        font-size: 0.5em;
+      }
+      line-height: 0.4em;
+    }
+    ion-avatar{
+      width: 2.2em;
+      height: 2.2em;
+    }
+    ion-icon{
+      color: $white;
+      font-weight: 400;
+    }
+    .box-ruby{
+      display: block;
+      background: rgba(98,106,147,0.4);
+      border-radius: 3em;
+      color:$white;
+      font-family: 'Mulish';
+      font-weight: 400;
+      width: 3.5em;
+      height: 1.7em;
+      padding: 0.2em 0.1em 0.1em 1.2em;
+      position: relative;
+      .ruby{
+        position: absolute;
+        top: 0.4em;
+        left: 0.5em;
+        margin: 0;
+        background: url('/assets/img/ruby.png') top center no-repeat;
+        width: 8px;
+        height: 14px;
+      }
+    }
+  }
+}
+
+
+section#descubrir{
+  ul{
+    li{
+      color:$primary;
+      font-size: 1.8em;
+      h1{
+        font-family: 'Mulish';
+        font-weight: 900;
+        color: $white;
+      }
+      span{
+        color: $gray;
+        opacity: 0.3;
+        font-size: 15px !important;
+        padding-left: 2em;
+      }
+    }
+  }
+
+  ion-card{
+    --background: rgba(98,106,147,0.2);
+    box-shadow: none;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    ion-card-content{
+      ion-slides{
+        ion-slide{
+          --background: transparent;
+          ion-tab-button{
+            ion-icon.icon-escudo{
+              background: url('/assets/img/iconescudo.png') center no-repeat;
+              width: 30px;
+              height: 30px;
+            }
+            ion-icon.icon-pelota{
+              background: url('/assets/img/pelota-deportiva.png') center no-repeat;
+              width: 30px;
+              height: 30px;
+            }
+            ion-icon.icon-skull{
+              background: url('/assets/img/skull.png') center no-repeat;
+              width: 30px;
+              height: 30px;
+            }
+            ion-icon.icon-sound{
+              background: url('/assets/img/sound.png') center no-repeat;
+              width: 30px;
+              height: 30px;
+            }
+            ion-label{
+              font-family: 'Mulish';
+              font-weight: 400;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section#canales{
+  h2{
+    font-family: 'Mulish';
+    font-weight: 900;
+    color: $white;
+    padding: 0 0.7em;
+    font-size: 1.2em;
+  }
+
+  ion-slides{
+    ion-slide{
+      text-align: left;
+    }
+  }
+
+  ion-card{
+    --background:transparent;
+    box-shadow: none;
+    ion-img{
+      display: block;
+      position: relative;
+    }
+    ion-card-header{
+      padding: 0.9em 0;
+      ion-card-title{
+        font-family: 'Mulish';
+        font-weight: 900;
+        color: $white;
+        font-size: 1.1em;
+        span{
+          font-weight: 200;
+        }
+      }
+    }
+    ion-card-content{
+      padding: 0;
+      font-family: 'Mulish';
+      font-weight: 200;
+      color: $white;
+      font-size: 1em;
+      ion-chip{
+        background: rgba(98,106,147,0.3);
+        height: 1.5em;
+        ion-label{
+          font-family: 'Mulish';
+          font-weight: 200;
+          color: $white;
+          font-size: 0.7em;
+        }
+      }
+    }
+    .live{
+      display: block;
+      position: absolute;
+      top: 2em;
+      left: 1.8em;
+      background: $pink;
+      padding: 0.5em 1em;
+      border-radius: 1em;
+      font-family: 'Mulish';
+      font-weight: 900;
+      color: $white;
+    }
+    .views{
+      display: block;
+      position: absolute;
+      top: 2em;
+      right: 1.8em;
+      background:$primary;
+      padding: 0.5em 1em;
+      border-radius: 1em;
+      font-family: 'Mulish';
+      font-weight: 900;
+      color: $white;
+    }
+  }
+
+}
+
+section#recommend{
+
+  h2{
+    font-family: 'Mulish';
+    font-weight: 900;
+    color: $white;
+    padding: 0 0.7em;
+    font-size: 1.2em;
+  }
+
+}
+
+ion-footer{
+  background: rgb(16,14,64);
+  background: linear-gradient(0deg, rgba(16, 14, 64, 0.33) 60%, rgba(98, 106, 147, 0.35) 100%);
+  color: $white;
+  height: 4em;
+  border-radius: 1em 1em 0 0;
+  box-shadow: inset 0 0 2px #ccc;
+  position: relative;
+  ion-grid{
+    margin-top: 0.5em;
+    ion-row{
+      ion-col{
+        ion-icon{
+          color: $gray;
+          font-size: 2.2em;
+        }
+        ion-icon.first{
+          color: $white;
+        }
+      }
+    }
+  }
+}
+.transparentblur{
+  border-radius: 1em 1em 0 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  backdrop-filter: saturate(100%) blur(5px);
+}
+.triangulo{
+  position: absolute;
+  top: -26px;
+  left: 44%;
+  background: transparent;
+  width: 3em;
+  height: 3em;
+  transform: rotate(45deg);
+  backdrop-filter: none;
 }
