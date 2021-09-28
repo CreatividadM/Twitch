@@ -35,3 +35,18 @@
 .fab-horizontal-center{
     left: 38%;
 }
+div.slide{
+    position: relative;
+    .personal{
+        --background:#6630DE;
+        --border-radius: 2em;
+        position: absolute;
+        bottom: -2em;
+        right: 3em;
+        width:4em;
+        height: 4em;
+    }
+}
+.swiper-pagination-bullets{
+    bottom: 34% !important;
+}

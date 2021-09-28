@@ -1,0 +1,151 @@
+<ion-content fullscreen>
+  <div id="backgound-home"></div>
+  <!--
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    | HEADER
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  !-->
+  <div id="header">
+
+    <ion-item lines="none" class="hijo">
+      <ion-avatar slot="start">
+        <img src="/assets/img/avatar.png">
+      </ion-avatar>
+      <ion-label>
+        <h2 class="title-header">M4st3rmiau</h2>
+        <small class="subtitle-header">ONLINE</small>
+      </ion-label>
+      <ion-icon name="chatbubble-ellipses-outline" slot="end"></ion-icon>
+      <span slot="end" class="box-ruby"><p class="ruby"></p> 200</span>
+    </ion-item>
+
+  </div>
+
+  <!--
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+    | HEADER
+    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+  !-->
+  <section id="explorar">
+    <ion-item lines="none">
+      <ion-label slot="start">
+        <ul>
+          <li><h1>Explorar</h1></li>
+        </ul>
+      </ion-label>
+      <ion-label slot="end"><h5>Top Games</h5></ion-label>
+    </ion-item>
+    <ion-slides mode="md" [options]="Options">
+
+      <ion-slide>
+        <ion-card>
+          <img src="/assets/img/free_fayer.png">
+          <ion-card-content>
+            <ion-card-header>
+              <ion-card-title>Free Fire</ion-card-title>
+              <ion-card-subtitle>18.6K</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="/assets/img/cr.png">
+          <ion-card-content>
+            <ion-card-header>
+              <ion-card-title>Clash Royale</ion-card-title>
+              <ion-card-subtitle>18.6K</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="/assets/img/lol.png">
+          <ion-card-content>
+            <ion-card-header>
+              <ion-card-title>League of legends</ion-card-title>
+              <ion-card-subtitle>18.6K</ion-card-subtitle>
+            </ion-card-header>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+    </ion-slides>
+  </section>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button>
+      <ion-icon class="sonic"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <section id="category">
+    <ul>
+      <li class="first">Categorías</li>
+      <li>Canales en vivo</li>
+    </ul>
+    <div style="clear: both;"></div>
+    <h2>Todas las Categorías</h2>
+    <ion-list mode="md">
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="/assets/img/item-avatar.png">
+        </ion-avatar>
+        <ion-label>
+          <h2>Fall Guys:Ultimate</h2>
+          <h3>Knockout</h3>
+          <p>6.4K Espectadores 4.5M Seguidores</p>
+          <ion-chip>Acción</ion-chip>
+          <ion-chip>Plataformas</ion-chip>
+          <ion-chip>Desportes</ion-chip>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="/assets/img/fornite.png">
+        </ion-avatar>
+        <ion-label>
+          <h2>Fornite</h2>
+          <p>75.5K Espectadores 78.5M Seguidores</p>
+          <ion-chip>Acción</ion-chip>
+          <ion-chip>Plataformas</ion-chip>
+          <ion-chip>Desportes</ion-chip>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </section>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+
+  <div class="transparentblur"></div>
+  <div class="triangulo"></div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <ion-tab-button routerLink="/">
+          <ion-icon name="home"></ion-icon>
+        </ion-tab-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-tab-button routerLink="/">
+          <ion-icon name="heart"></ion-icon>
+        </ion-tab-button>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+      <ion-col size="2">
+        <ion-tab-button routerLink="/">
+          <ion-icon name="compass"></ion-icon>
+        </ion-tab-button>
+      </ion-col>
+      <ion-col size="2">
+        <ion-tab-button routerLink="/">
+          <ion-icon name="notifications"></ion-icon>
+        </ion-tab-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-footer>

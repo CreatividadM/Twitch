@@ -1,0 +1,42 @@
+/*
+  Varials Colors Theme
+  MaoLop
+*/
+$primary:#6630DE;
+$pink:#E33FB1;
+$blueking:#100E40;
+$secondary:#29C69B;
+$gray:#626A93;
+$white:#FFFFFF;
+ion-content{
+    --background:#100E40 url('/assets/img/backgroundimage.png') center center fixed;
+    background-size: cover;
+}
+ion-slides {
+    height: 100%;
+    --bullet-background: white;
+    --bullet-background-active: white;
+    
+    ion-slide{
+        div.content{
+            background: rgba(98,106,147,0.4);
+            margin: 0 1em;
+            border-radius: 1em;
+            padding: 1em 3em;
+            box-shadow: inset 0 0 2px #ccc;
+            h2{
+                font-family: 'Mulish';
+                font-weight: 900;
+                font-size: 1.2em;
+                color: $white;
+            }
+            p{  
+                font-family: 'Mulish';
+                font-weight: 200;
+                font-size: 0.6em;
+                color: $white;
+                margin: 3em 0;
+            }
+        }
+    }
+}

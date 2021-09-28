@@ -1,6 +1,11 @@
 {
 	"appId": "com.twitch.creatividadmovil",
-	"appName": "twitch",
+	"appName": "Twitch",
 	"webDir": "www",
-	"bundledWebRuntime": false
+	"bundledWebRuntime": false,
+	"plugins": {
+		"SplashScreen": {
+			"launchShowDuration": 3000
+		}
+	}
 }

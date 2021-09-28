@@ -21,7 +21,7 @@ export class HomePage {
   };
 
   options = {
-    slidesPerView: 1.5,
+    slidesPerView: 1.2,
     centeredSlides:true,
     mode:'md',
     spaceBetween:5,

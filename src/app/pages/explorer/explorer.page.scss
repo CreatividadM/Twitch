@@ -1,0 +1,268 @@
+/*
+  Varials Colors Theme
+  MaoLop
+*/
+$primary:#6630DE;
+$pink:#E33FB1;
+$blueking:#100E40;
+$secondary:#29C69B;
+$gray:#626A93;
+$white:#FFFFFF;
+
+#backgound-home{
+  display: block;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  height: 50%;
+  width: 100%;
+  background: url('/assets/img/background-home.png') center center no-repeat;
+  background-size: cover;
+}
+ion-content{
+  --background:#100E40;
+  position: relative;
+  .trapecio{
+    background:rgb(16,14,64);
+  }
+  ion-fab{
+    ion-fab-button{
+      //--background:rgb(16,14,64);
+      --background: url('/assets/img/botontras.png') center center no-repeat;
+      --box-shadow:none;
+      width: 153px;
+      height: 141px;
+      --border-radius: 0px;
+      ion-icon.sonic{
+        position: relative;
+        top: -25px;
+        width: 21px;
+        height: 16px;
+        background: url('/assets/img/sonic.png') center no-repeat;
+      }
+    }
+  }
+}
+
+#header{
+    background: rgb(16,14,64);
+    background: linear-gradient(180deg, rgba(16,14,64,1) 60%, rgba(98,106,147,1) 280%);
+    padding: 2em;
+    border-radius: 0 0 3em 3em;
+    ion-item{
+      --background: transparent;
+      ion-label{
+        .title-header{
+          color:$white;
+          font-family: 'Mulish';
+          font-weight: 900;
+        }
+        .subtitle-header{
+          color: $secondary;
+          font-family: 'Mulish';
+          font-weight: 900;
+          font-size: 0.5em;
+        }
+        line-height: 0.4em;
+      }
+      ion-avatar{
+        width: 2.2em;
+        height: 2.2em;
+      }
+      ion-icon{
+        color: $white;
+        font-weight: 400;
+      }
+      .box-ruby{
+        display: block;
+        background: rgba(98,106,147,0.4);
+        border-radius: 3em;
+        color:$white;
+        font-family: 'Mulish';
+        font-weight: 400;
+        width: 3.5em;
+        height: 1.7em;
+        padding: 0.2em 0.1em 0.1em 1.2em;
+        position: relative;
+        .ruby{
+          position: absolute;
+          top: 0.4em;
+          left: 0.5em;
+          margin: 0;
+          background: url('/assets/img/ruby.png') top center no-repeat;
+          width: 8px;
+          height: 14px;
+        }
+      }
+    }
+  }
+
+  section#explorar{
+    padding: 0 0.5em;
+      ion-item{
+          --background:transparent;
+          ion-label{
+            ul{
+                li{
+                  color:$primary;
+                  font-size: 1.8em;
+                  h1{
+                    font-family: 'Mulish';
+                    font-weight: 900;
+                    color: $white;
+                  }
+                }
+              }
+              h5{
+                color: $white;
+                font-family: 'Mulish';
+                font-weight: 900;
+                font-size: 0.8em;            
+              }
+          }
+      }
+      ion-slides{
+          ion-slide{
+            background: rgba(160, 164, 184, 0.1);
+            /*clip-path: polygon(0 50%, 100% 10%, 100% 100%, 0% 100%);*/
+            border-radius: 1em;
+            box-shadow: inset 0 0 2px #ccc;
+            ion-card{
+                --background:transparent;
+                box-shadow:none;
+                ion-card-content{
+                ion-card-header{
+                    text-align: left;
+                    ion-card-title{
+                        font-family: 'Mulish';
+                        font-weight: 900;
+                        color: $white;
+                        font-size: 1em;
+                    }
+                    ion-card-subtitle{
+                        font-family: 'Mulish';
+                        font-weight: 200;
+                        color: $white;
+                    }
+                }
+              }
+              img{
+                width: 12em;
+                height: 16em;
+              }
+            }
+          }
+      }
+  }
+
+  section#category{
+    padding: 0 0.5em;
+    ul{
+      padding: 0;
+      margin: 0.5em 0;
+      li.first{
+        border-bottom: 4px solid $primary;
+        color: $white;
+      }
+      li{
+        display: block;
+        list-style:none;
+        float: left;
+        padding: 0 1em;
+        font-family: 'Mulish';
+        font-weight: 900;
+        color: $gray;
+        line-height: 3;
+      }
+    }
+    h2{
+      font-family: 'Mulish';
+      font-weight: 900;
+      color: $white;
+      font-size: 0.9em;
+    }
+    ion-list{
+      background: transparent;
+      ion-item{
+        position: relative;
+        //--background: transparent;
+        --background: rgba(160, 164, 184, 0.1);
+        margin: 1em 0;
+        border-radius: 1em;
+        ion-avatar{
+          --border-radius: 0.5em;
+          width: 5em;
+          height: 6em;
+          position: absolute;
+          top: -15px;
+          left: -5px;
+          border: 0.5em solid $blueking;
+        }
+        ion-label{
+          padding-left: 4em;
+          color: $white;
+          font-family: 'Mulish';
+          font-weight: 900;
+          h2{
+            font-size: 1.2em;
+          }
+          h3{
+            font-weight: 900;
+          }
+          p{
+            color: $white;
+            font-weight: 200;
+          }
+          ion-chip{
+            color: $white;
+            font-size: 0.5em;
+          }
+        }
+      }
+    }
+  }
+
+
+  ion-footer{
+    background: rgb(16,14,64);
+    background: linear-gradient(0deg, rgba(16, 14, 64, 0.33) 60%, rgba(98, 106, 147, 0.35) 100%);
+    color: $white;
+    height: 4em;
+    border-radius: 1em 1em 0 0;
+    box-shadow: inset 0 0 2px #ccc;
+    position: relative;
+    ion-grid{
+      margin-top: 0.5em;
+      ion-row{
+        ion-col{
+          ion-icon{
+            color: $gray;
+            font-size: 2.2em;
+          }
+          ion-icon.first{
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  .transparentblur{
+    border-radius: 1em 1em 0 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    backdrop-filter: saturate(100%) blur(5px);
+  }
+  .triangulo{
+    position: absolute;
+    top: -26px;
+    left: 44%;
+    background: transparent;
+    width: 3em;
+    height: 3em;
+    transform: rotate(45deg);
+    backdrop-filter: none;
+  }
+  
