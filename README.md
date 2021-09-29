@@ -1,4 +1,4 @@
-# twitch
+# Twitch
 Reto cumplido del Diseñador MaoLop especializado para Flutter, pero esta en IONIC.
 ![xdxd](https://user-images.githubusercontent.com/63609718/135189604-49b713ca-f3bd-4267-8347-c6c0e6190333.png)
 ### En IONIC
